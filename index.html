@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+        body{
+            background-color: aliceblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .section-stories{
+            padding: 9rem 3rem;
+            background-color: antiquewhite;
+            margin:auto;
+            width: 75%;
+            box-shadow: 5px 5px 36px rgba(0,0,0,.12);
+        }
+        .shape{
+            width: 100px;
+            height: 100px;
+            background-color: blueviolet;
+            float: left;
+            border-radius: 50%;
+            margin-right: 1rem;
+            shape-outside: circle(50% at 50% 50%);
+            position: relative;
+            overflow: hidden;
+            transition: all 340ms ease-in-out;
+        }
+        .shape h4{
+            position: absolute;
+            top:50%;
+            left:30%;
+            
+            opacity: 0;
+            transition: all 340ms ease-in-out;
+        }
+        .shape:hover h4{
+             opacity: 1;
+             top:20%;
+             left: 30%;
+        }
+        .shape:hover{
+            transform: scale(.8);
+
+        }
+    </style>
+</head>
+<body>
+    <section class="section-stories">
+
+        <div>
+            <h2>We make people genuinely happy</h2>
+        </div>
+
+        <div class="story">
+            <div class="shape">
+                <h4>hello</h4>
+            </div>
+           <div class="story-text">
+            <h3 class="heading-tertiary">I had the best week ever with my family.</h3>
+            <p>Lorem ipsum 
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero modi accusantium
+                maiores inventore eveniet? Molestias blanditiis nemo impedit cumque iste iure 
+                voluptatem deserunt? Exercitationem asperiores alias consequatur iusto voluptate
+                 officia ullam non corrupti ea? Modi n
+               ecessitatibus omnis tenetur reprehenderit! Aut cum natus commodi itaque impedit 
+               obcaecati dignissimos quisquam quas, officiis minima iusto sit aspernatur maiores
+                ipsa repudiandae provident. Magni omnis corrupti possimus laborum quasi. Odio repellendus 
+                assumenda, possimus maiores deserunt optio, dolores eum facere, repudiandae voluptatem
+                 quisquam corporis perspiciatis iure recusandae laboriosam quidem atque hic minus i
+               psum officia tempore voluptas iusto! Reiciendis doloribus quasi provident ratione explicabo
+                culpa vel unde. olor sit amet consectetur adipisicing elit. Ipsam, commodi. Unde libero iust
+                o deleniti, hic impedit accusantium. Sunt neque inventore temporibus a necessitatibus non 
+                et dignissimos soluta aspernatur ipsum doloribus enim nihil eum, esse magni officiis nam 
+                deserunt molestiae repellendus.</p>
+           </div>
+        </div>
+    </section>
+    <section class="section-book"></section>
+</body>
+</html>
